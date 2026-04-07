@@ -1,0 +1,23 @@
+=== Отчёт об обучении модели ===
+Датасет: 5000 строк, fraud=761 (15.2%)
+Train: 4000, Test: 1000
+Архитектура: Dense(32,BN,Drop0.3) → Dense(16,Drop0.2) → Sigmoid
+Оптимизатор: Adam lr=5e-4, class_weight fraud=5.57
+Остановлено на эпохе: 13
+
+ROC AUC: 0.8822
+Оптимальный порог: 0.7242 (F1=0.7881)
+
+Classification Report:
+              precision    recall  f1-score   support
+
+      Normal     0.9612    0.9634    0.9623       848
+       Fraud     0.7933    0.7829    0.7881       152
+
+    accuracy                         0.9360      1000
+   macro avg     0.8773    0.8732    0.8752      1000
+weighted avg     0.9357    0.9360    0.9358      1000
+
+Confusion Matrix:
+  TN=817  FP=31
+  FN=33  TP=119

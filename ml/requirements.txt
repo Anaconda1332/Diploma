@@ -1,0 +1,10 @@
+# ML: обучение и экспорт модели в TFLite
+# Установка: pip install -r requirements.txt
+# На Windows лучше ставить только готовые пакеты (без сборки):
+#   pip install --upgrade pip
+#   pip install --only-binary :all: -r requirements.txt
+
+numpy>=1.24.0
+pandas>=1.3.0
+scikit-learn>=1.0.0
+tensorflow>=2.10.0
